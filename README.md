@@ -1,5 +1,8 @@
 # README
 
+### Fav-books-api
+- Authentication With JWT
+
 - [Source Part 1](https://www.microverse.org/blog/test-driven-development-of-restful-json-api-with-rails)
  - [Source Part 2](https://www.microverse.org/blog/build-a-restful-api-authentication-with-jwt)
 
