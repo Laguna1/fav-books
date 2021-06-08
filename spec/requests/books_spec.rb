@@ -81,8 +81,8 @@ RSpec.describe 'Books', type: :request do
     before { put "/api/v1/books/#{book_id}", params: valid_attributes }
 
     context 'when book exists' do
-      it 'returns status code 204' do
-        expect(response).to have_http_status(204)
+      it 'returns status code 200' do
+        expect(response).to have_http_status(200)
       end
 
       it 'updates the book' do
