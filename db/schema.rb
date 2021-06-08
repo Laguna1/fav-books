@@ -12,10 +12,13 @@
 
 ActiveRecord::Schema.define(version: 2021_06_07_232105) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "books", force: :cascade do |t|
     t.string "title"
     t.string "author"
-    t.integer "category_id", null: false
+    t.bigint "category_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["category_id"], name: "index_books_on_category_id"
